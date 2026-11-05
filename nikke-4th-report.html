@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>니케 4주년 역주행 보고서</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+/* Layout: 문서형 단일 컬럼. 표제부·메타 → 번호 매긴 장(章) → 출처. 장식 없이 선과 여백으로 위계 구성 */
+:root{
+  --bg:#ffffff; --fg:#1d2228; --muted:#5f6873; --line:#d9dde2; --soft:#f4f6f8; --accent:#2c4a6e;
+  --body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#16191d; --fg:#e3e6ea; --muted:#9aa3ad; --line:#333a42; --soft:#1e2227; --accent:#9cb7d8; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#16191d; --fg:#e3e6ea; --muted:#9aa3ad; --line:#333a42; --soft:#1e2227; --accent:#9cb7d8; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.75}
+.doc{max-width:780px;margin:0 auto;padding-block:48px 72px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:40px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.4;font-weight:600}
+h1{font-size:24px}
+h2{font-size:18px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+h3{font-size:15px}
+p{margin:0}
+ul,ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+header{display:flex;flex-direction:column;gap:14px;padding-bottom:20px;border-bottom:2px solid var(--fg)}
+.kind{font-size:13px;color:var(--muted)}
+.meta{display:grid;grid-template-columns:max-content 1fr;gap:2px 18px;font-size:13px;color:var(--muted)}
+.meta dt{font-weight:500}
+.meta dd{margin:0}
+section{display:flex;flex-direction:column;gap:14px}
+.text{max-width:68ch}
+.box{background:var(--soft);border:1px solid var(--line);padding:16px 18px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:540px;font-size:14px;font-variant-numeric:tabular-nums}
+caption{text-align:left;font-size:13px;color:var(--muted);padding-bottom:6px}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{border-top:1px solid var(--fg);border-bottom:1px solid var(--fg);font-weight:500;font-size:13px}
+tbody tr:last-child td{border-bottom:1px solid var(--fg)}
+td.r{text-align:right;white-space:nowrap}
+.chart{overflow-x:auto}
+.chart svg{display:block;width:100%;min-width:500px;height:auto}
+.chart text{fill:var(--muted);font-family:var(--body);font-size:12px}
+.chart .v{fill:var(--fg);font-weight:600}
+.fig{font-size:13px;color:var(--muted)}
+.causes{display:flex;flex-direction:column;gap:18px}
+.causes > div{display:flex;flex-direction:column;gap:4px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cols > div{display:flex;flex-direction:column;gap:8px;min-width:0}
+@media (max-width:620px){.cols{grid-template-columns:1fr}}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.src{font-size:14px}
+</style>
+</head>
+<body>
+
+<div class="doc">
+
+<header>
+  <span class="kind">모바일 게임 시장 분석 보고서</span>
+  <h1>승리의 여신: 니케 4주년 업데이트 이후 매출 순위 상승 원인 분석</h1>
+  <dl class="meta">
+    <dt>작성일</dt><dd>2026년 11월 5일</dd>
+    <dt>분석 대상</dt><dd>승리의 여신: 니케 (개발 시프트업 / 서비스 레벨 인피니트)</dd>
+    <dt>분석 자료 기간</dt><dd>2026년 10월 29일 ~ 11월 3일</dd>
+    <dt>자료 출처</dt><dd>국내 게임 전문 매체 기사 6건 (순위 데이터: 모바일인덱스 등)</dd>
+  </dl>
+</header>
+
+<section>
+  <h2>1. 요약</h2>
+  <div class="box text">
+    <p>승리의 여신: 니케는 10월 29일 4주년 업데이트 이후 한국 구글플레이 매출 순위가 35위에서 5위로 올랐습니다. 직접적인 원인은 업데이트 내용입니다. 메인 스토리의 주요 서사 완결, 신규 SSR 3종 출시, 무료 모집 혜택, 한정 코스튬 판매, 국내외 오프라인 마케팅이 같은 시기에 집중되었습니다. 이 게임은 3주년, 3.5주년, 여름 업데이트 때도 같은 방식으로 순위가 크게 올랐으며, 이번 상승도 그 흐름을 잇습니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>2. 순위 변동 현황</h2>
+  <div class="chart">
+    <svg viewBox="0 0 620 280" role="img" aria-label="한국 구글플레이 매출 순위 추이: 업데이트 전 35위, 10월 30일 6위, 11월 2일 3위, 11월 3일 4위, 11월 1주 주간 5위">
+      <g stroke="var(--line)" stroke-width="1">
+        <line x1="60" y1="30" x2="600" y2="30"/>
+        <line x1="60" y1="81" x2="600" y2="81"/>
+        <line x1="60" y1="137" x2="600" y2="137"/>
+        <line x1="60" y1="194" x2="600" y2="194"/>
+        <line x1="60" y1="250" x2="600" y2="250" stroke="var(--muted)"/>
+      </g>
+      <g text-anchor="end">
+        <text x="50" y="34">1위</text><text x="50" y="85">10위</text>
+        <text x="50" y="141">20위</text><text x="50" y="198">30위</text><text x="50" y="254">40위</text>
+      </g>
+      <line x1="170" y1="30" x2="170" y2="250" stroke="var(--muted)" stroke-dasharray="3 3"/>
+      <text x="176" y="244">10/29 업데이트</text>
+      <polyline fill="none" stroke="var(--accent)" stroke-width="2" points="100,222 240,58 380,41 450,47 530,53"/>
+      <g fill="var(--accent)">
+        <circle cx="100" cy="222" r="4"/><circle cx="240" cy="58" r="4"/><circle cx="380" cy="41" r="4"/>
+        <circle cx="450" cy="47" r="4"/><circle cx="530" cy="53" r="4"/>
+      </g>
+      <g text-anchor="middle">
+        <text class="v" x="100" y="212">35</text><text class="v" x="240" y="76">6</text>
+        <text class="v" x="380" y="59">3</text><text class="v" x="450" y="65">4</text><text class="v" x="530" y="71">5</text>
+        <text x="100" y="270">업데이트 전</text><text x="240" y="270">10/30</text>
+        <text x="380" y="270">11/2</text><text x="450" y="270">11/3</text><text x="530" y="270">11월 1주(주간)</text>
+      </g>
+    </svg>
+  </div>
+  <p class="fig">그림 1. 한국 구글플레이 매출 순위 추이. 업데이트 전 35위는 요청에 주어진 수치이며 기사에서 따로 확인하지 못했습니다. 각 시점의 집계처와 기준(일간·주간)이 달라 흐름을 보는 용도로 사용해야 합니다.</p>
+
+  <div class="tbl">
+    <table>
+      <caption>표 1. 업데이트 이후 국가·마켓별 매출 순위</caption>
+      <thead><tr><th>날짜</th><th>지표</th><th style="text-align:right">순위</th><th>출처</th></tr></thead>
+      <tbody>
+        <tr><td>10/29</td><td>한국 애플 앱스토어 (업데이트 당일)</td><td class="r">1위</td><td>지디넷코리아</td></tr>
+        <tr><td>10/30</td><td>한국 구글 / 애플</td><td class="r">6위 / 1위</td><td>테크M, 게임톡</td></tr>
+        <tr><td>10/30</td><td>일본 애플 (전일 대비)</td><td class="r">41위 → 4위</td><td>게임톡</td></tr>
+        <tr><td>10/30</td><td>대만 구글 / 애플</td><td class="r">6위 / 1위</td><td>테크M</td></tr>
+        <tr><td>10/26~11/1</td><td>국내 3사 통합 주간 매출</td><td class="r">7위 (37계단 상승)</td><td>게임뷰</td></tr>
+        <tr><td>11/2</td><td>구글플레이 한국 / 일본 / 대만</td><td class="r">3위 / 1위 / 5위</td><td>지디넷코리아, 플레이포럼</td></tr>
+        <tr><td>11/3</td><td>한국 구글플레이 일간</td><td class="r">4위</td><td>게임뷰</td></tr>
+        <tr><td>11월 1주</td><td>한국 구글플레이 / 애플 주간</td><td class="r">5위 / 15위</td><td>게임포커스</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text">일본 구글플레이 1위는 4개월 만에 다시 오른 것입니다. 한국, 일본, 대만 세 핵심 시장에서 모두 최상위권에 들었습니다.</p>
+</section>
+
+<section>
+  <h2>3. 상승 원인 분석</h2>
+  <div class="causes text">
+    <div>
+      <h3>3.1 메인 스토리 49·50챕터의 서사 완결</h3>
+      <p>제3차 지상 탈환전을 중심으로 4년간 이어진 "인류와 퀸의 대결" 서사가 마무리되었고, 개발진은 다음 핵심 서사로 넘어간다고 밝혔습니다. 새 애니메이션을 포함한 풀 보이스 이벤트 스토리 'MARIA-n'도 추가되어 분량 면에서 좋은 평가를 받았습니다. 스토리를 보려는 복귀 이용자가 늘어난 것이 매출 회복의 기반이 되었습니다.</p>
+    </div>
+    <div>
+      <h3>3.2 신규 캐릭터 출시</h3>
+      <p>스토리의 핵심 인물을 필그림 '마리안: 퀸'으로 출시해 스토리에 대한 관심이 캐릭터 모집 수요로 이어지게 했습니다. '라푼젤: 생츄어리'와 '홍련: 신살'(11월 5일)까지 SSR 3종을 순차 공개해 업데이트 효과가 이어지도록 구성했습니다.</p>
+    </div>
+    <div>
+      <h3>3.3 무료 모집 및 성장 지원</h3>
+      <p>신규 니케 특수 모집과 필그림 선택 모집에서 매일 무료 모집 기회를 제공했고, '라푼젤: 생츄어리'는 이벤트로 무료 지급했습니다. 성장 지원 시스템 '싱크로 부스트'를 도입해 복귀·신규 이용자의 진입 부담도 낮췄습니다.</p>
+    </div>
+    <div>
+      <h3>3.4 한정 코스튬 판매</h3>
+      <p>신규 한정 코스튬 4종을 출시하고 기존 한정 코스튬을 재판매했습니다. 캐릭터 모집과 코스튬 구매 수요가 같은 시기에 겹치면서 단기 매출이 커진 것으로 보입니다.</p>
+    </div>
+    <div>
+      <h3>3.5 국내외 오프라인 마케팅</h3>
+      <p>10월 30일~11월 1일 용산 아이파크몰에서 마리안 옥외광고와 스탬프 랠리를 진행했습니다. 뉴욕 타임스퀘어 광고, 도쿄 롯폰기역의 4년 비주얼 69장 전시, 아키하바라·신주쿠·시부야 광고도 같은 시기에 진행했습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>4. 비교 및 시장 상황</h2>
+  <div class="cols">
+    <div>
+      <h3>4.1 과거 대형 업데이트 사례</h3>
+      <ul>
+        <li>3주년 (2025.11): 국내 한때 매출 1위, 일본 앱스토어 2위</li>
+        <li>3.5주년 (2026.4.23): 당일 국내 앱스토어 1위, 4월 27일 국내 구글 1위</li>
+        <li>여름 업데이트 (2026.7): 한국 앱스토어 1위, 일본 구글 1위</li>
+      </ul>
+      <p>평상시에는 30~40위권에 머물다가 대형 업데이트 때 최상위권으로 오르는 주기가 반복되고 있습니다.</p>
+    </div>
+    <div>
+      <h3>4.2 11월 3일 한국 구글플레이 일간 순위</h3>
+      <ol>
+        <li>도깨비의세계 (19일 연속 1위)</li>
+        <li>제우스: 오만의 신 (10월 월간 1위)</li>
+        <li>리니지M</li>
+        <li>승리의 여신: 니케</li>
+      </ol>
+      <p>신작 MMORPG가 상위권을 차지한 시장에서 서비스 4년 차 서브컬처 게임이 4위에 올랐습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>5. 향후 업데이트 및 이벤트 일정</h2>
+  <div class="tbl">
+    <table>
+      <caption>표 2. 4주년 업데이트 이후 예정 일정</caption>
+      <thead><tr><th>일정</th><th>구분</th><th>내용</th><th>출처</th></tr></thead>
+      <tbody>
+        <tr><td>11월 5일</td><td>게임 내 업데이트</td><td>신규 필그림 '홍련: 신살' 특수 모집 시작. 4주년 업데이트에서 순차 공개하는 신규 SSR 3종 중 마지막 캐릭터입니다.</td><td>지디넷코리아, 플레이포럼</td></tr>
+        <tr><td>11월 6일 ~ 19일</td><td>오프라인 팝업</td><td>무신사 스토어 성수 컬래버 팝업 'GODDESS ARISE in MUSINSA'</td><td>플레이포럼</td></tr>
+        <tr><td>12월 4일 ~ 6일</td><td>오프라인 행사</td><td>AGF 2026 (일산 킨텍스) 참가, 부스명 '승리의 날개호'</td><td>플레이포럼</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="src">
+  <h2>참고 자료</h2>
+  <ol>
+    <li><a href="https://gamefocus.co.kr/detail.php?number=180225" target="_blank" rel="noopener">게임포커스, 「서비스 4주년 '니케' 매출 순위 대폭 상승… 구글 플레이 5위 기록」, 2026.11.02</a></li>
+    <li><a href="https://zdnet.co.kr/view/?no=20261102094333" target="_blank" rel="noopener">지디넷코리아, 「'승리의 여신: 니케', 4주년 효과로 매출 순위 급등…장기 흥행 저력」, 2026.11.02</a></li>
+    <li><a href="https://www.playforum.net/news/articleView.html?idxno=635749" target="_blank" rel="noopener">플레이포럼, 「공식이 된 역주행...4주년 '승리의 여신: 니케' 일본 구글 매출 정상 탈환」, 2026.11.02</a></li>
+    <li><a href="https://www.techm.kr/news/articleView.html?idxno=156705" target="_blank" rel="noopener">테크M, 「4주년 '승리의 여신: 니케', 한국·대만 앱스토어 매출 정상」, 2026.10.30</a></li>
+    <li><a href="https://www.gametoc.co.kr/news/articleView.html?idxno=112622" target="_blank" rel="noopener">게임톡, 「[니케] 스토리만 봐도 매출 오를 만하네」, 2026.10.30</a></li>
+    <li><a href="https://www.gamevu.co.kr/news/articleView.html?idxno=61997" target="_blank" rel="noopener">게임뷰, 「컴투스 '제우스' 10월 매출 정상, '도깨비의세계' 주간 3주 연속 선두」, 2026.11.04</a></li>
+  </ol>
+</section>
+
+</div>
+</body>
+</html>
